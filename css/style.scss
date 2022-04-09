@@ -1,0 +1,144 @@
+$primary-color: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: $Very-Dark-Blue;
+    line-height: 1.6;
+    font-size: .8rem;
+    color: white;
+}
+
+.d-none {
+    display: none;
+}
+
+div.star {
+    width: 30px;
+    height: 30px;
+    background: lighten($Dark-Blue, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 318px;
+    height: 325px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $Dark-Blue;
+    border-radius: 20px;
+    padding: 20px;
+
+    p {
+        color: $Light-Grey;
+    }
+
+    .box-body {
+        margin-top: 15px;
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        p {
+            color: $Light-Grey;
+            &.msg{
+               margin-bottom: 20px; 
+            }
+            &.error-msg{
+                position: absolute;
+                left: 50%;
+                top: 51%;
+                transform: translate(-50%, 0%);
+                text-align: center;
+                color: red;
+             }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: lighten($Dark-Blue, 10);
+            color: $Light-Grey;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 500ms;
+
+            &:hover {
+                background: lighten($Dark-Blue, 20);
+                transform: rotate(360deg);
+                border-radius: 0;
+            }
+
+            &.selected {
+                background: $primary-color;
+                color: $White;
+            }
+
+            &.error {
+                border: 1px solid red;
+            }
+        }
+    }
+
+    .submit {
+        display: block;
+        width: 100%;
+        background: $primary-color;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+            // background: lighten($color: $primary-color, $amount: 5);
+            // margin: 0 5%;
+            // width: 90%;
+            background: darken($color: $primary-color, $amount: 20);
+            border-radius: 0px;
+        }
+    }
+
+    #box-2 {
+        text-align: center;
+    }
+    
+    .selection-msg {
+        padding: 6px 10px;
+        color: $primary-color;
+        background: lighten($Dark-Blue, 10);
+        display: inline-flex;
+        margin: 10px;
+        border-radius: 50px;
+    }
+}

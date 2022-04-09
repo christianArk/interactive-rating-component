@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background: #121417;
+  line-height: 1.6;
+  font-size: .8rem;
+  color: white;
+}
+
+.d-none {
+  display: none;
+}
+
+div.star {
+  width: 30px;
+  height: 30px;
+  background: #3a4655;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 318px;
+  height: 325px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #252d37;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container p {
+  color: #959eac;
+}
+
+.container .box-body {
+  margin-top: 15px;
+}
+
+.container .box-body img {
+  display: block;
+  margin: auto;
+}
+
+.container .box-body p {
+  color: #959eac;
+}
+
+.container .box-body p.msg {
+  margin-bottom: 20px;
+}
+
+.container .box-body p.error-msg {
+  position: absolute;
+  left: 50%;
+  top: 51%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  text-align: center;
+  color: red;
+}
+
+.container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.container .buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #3a4655;
+  color: #959eac;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.container .buttons button:hover {
+  background: #4e5f73;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 0;
+}
+
+.container .buttons button.selected {
+  background: #fb7413;
+  color: white;
+}
+
+.container .buttons button.error {
+  border: 1px solid red;
+}
+
+.container .submit {
+  display: block;
+  width: 100%;
+  background: #fb7413;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.container .submit:hover {
+  background: #a64703;
+  border-radius: 0px;
+}
+
+.container #box-2 {
+  text-align: center;
+}
+
+.container .selection-msg {
+  padding: 6px 10px;
+  color: #fb7413;
+  background: #3a4655;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
