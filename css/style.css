@@ -10,7 +10,7 @@ body {
   font-family: 'Overpass', sans-serif;
   background: #121417;
   line-height: 1.6;
-  font-size: .8rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -19,8 +19,8 @@ body {
 }
 
 div.star {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: #3a4655;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,16 +35,16 @@ div.star {
 }
 
 .container {
-  max-width: 318px;
-  height: 325px;
+  max-width: 500px;
+  height: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #252d37;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 30px;
+  padding: 35px;
 }
 
 .container p {
@@ -60,6 +60,10 @@ div.star {
   margin: auto;
 }
 
+.container .box-body h1 {
+  margin-top: 2rem;
+}
+
 .container .box-body p {
   color: #959eac;
 }
@@ -71,7 +75,7 @@ div.star {
 .container .box-body p.error-msg {
   position: absolute;
   left: 50%;
-  top: 51%;
+  top: 54%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   text-align: center;
@@ -85,12 +89,14 @@ div.star {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
 .container .buttons button {
-  width: 40px;
-  height: 40px;
+  font-size: 1.2rem;
+  width: 70px;
+  height: 70px;
   border: none;
   background: #3a4655;
   color: #959eac;
@@ -117,11 +123,12 @@ div.star {
 }
 
 .container .submit {
+  font-size: 1.2rem;
   display: block;
   width: 100%;
   background: #fb7413;
   border: none;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50px;
   text-transform: uppercase;
   color: white;
@@ -142,13 +149,14 @@ div.star {
 }
 
 .container .selection-msg {
-  padding: 6px 10px;
+  padding: 10px 15px;
   color: #fb7413;
   background: #3a4655;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 10px;
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
   border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */
