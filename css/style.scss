@@ -17,7 +17,7 @@ body {
     font-family: 'Overpass', sans-serif;
     background: $Very-Dark-Blue;
     line-height: 1.6;
-    font-size: 1.3rem;
+    font-size: .8rem;
     color: white;
 }
 
@@ -26,8 +26,8 @@ body {
 }
 
 div.star {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: lighten($Dark-Blue, 10);
     display: flex;
     justify-content: center;
@@ -36,15 +36,15 @@ div.star {
 }
 
 .container {
-    max-width: 500px;
-    height: 500px;
+    max-width: 318px;
+    height: 325px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: $Dark-Blue;
-    border-radius: 30px;
-    padding: 35px;
+    border-radius: 20px;
+    padding: 20px;
 
     p {
         color: $Light-Grey;
@@ -58,10 +58,6 @@ div.star {
             margin: auto;
         }
 
-        h1 {
-            margin-top: 2rem;
-        }
-
         p {
             color: $Light-Grey;
             &.msg{
@@ -70,7 +66,7 @@ div.star {
             &.error-msg{
                 position: absolute;
                 left: 50%;
-                top: 54%;
+                top: 51%;
                 transform: translate(-50%, 0%);
                 text-align: center;
                 color: red;
@@ -81,13 +77,11 @@ div.star {
     .buttons {
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
         margin-bottom: 30px;
 
         button {
-            font-size: 1.2rem;
-            width: 70px;
-            height: 70px;
+            width: 40px;
+            height: 40px;
             border: none;
             background: lighten($Dark-Blue, 10);
             color: $Light-Grey;
@@ -113,12 +107,11 @@ div.star {
     }
 
     .submit {
-        font-size: 1.2rem;
         display: block;
         width: 100%;
         background: $primary-color;
         border: none;
-        padding: 15px;
+        padding: 10px;
         border-radius: 50px;
         text-transform: uppercase;
         color: white;
@@ -141,12 +134,11 @@ div.star {
     }
     
     .selection-msg {
-        padding: 10px 15px;
+        padding: 6px 10px;
         color: $primary-color;
         background: lighten($Dark-Blue, 10);
         display: inline-flex;
-        margin-top: 3rem;
-        margin-bottom: 1.1rem;
+        margin: 10px;
         border-radius: 50px;
     }
 }
